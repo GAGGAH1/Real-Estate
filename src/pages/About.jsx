@@ -13,7 +13,10 @@ const About = () => {
                   <div className='flex flex-col items-center justify-center text-center p-4 space-y-2'>
                     <h1 className='text-2xl font-bold'>CEO/MANAGER</h1>
                     <p className='text-gray-600'>GIDEON GAGGAH</p>
-                    <span>@GAGA REAL ESTATE LIMITED</span>
+                    <div className='flex items-center space-x-2 justify-between '>
+                      <span>@GAGA REAL ESTATE LIMITED</span>
+                      <span className='text-xs text-green-600 border-b-2 border-green-400'>CAC CERTIFIED</span>
+                    </div>
                     <Link to='/contact' className='bg-orange-400 text-white px-4 py-2 rounded hover:bg-orange-500 transition duration-300'>IG: officiall_gflow</Link>
                     <Link to='/contact' className='bg-orange-400 text-white px-4 py-2 rounded hover:bg-orange-500 transition duration-300'>GMAIL: gaggahgideon@gmail.com</Link>
                   </div>
