@@ -29,7 +29,7 @@ const About = () => {
                     At <span className='font-bold text-orange-400'>GAGA Real Estate Limited</span>, we are committed to delivering exceptional real estate services across residential, commercial, and investment properties. With a focus on integrity, professionalism, and client satisfaction, we aim to make property ownership and investment simple, secure, and rewarding
                   </p>
                   <WhatWeDo />
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mt-6'>
+                  <div className='grid grid-cols-1 md:grid-cols-2 gap-2 **mt-6**'>
                     <Vision />
                     <Mission />
                   </div>
