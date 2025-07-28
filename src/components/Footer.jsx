@@ -26,7 +26,6 @@ const Footer = () => {
              <p className="text-sm text-gray-300 mb-4 leading-relaxed">
                GAGA Real Estate Limited is a trusted real estate company offering property sales, rentals, management, and investment advisory services. We connect clients with the right properties and ensure seamless real estate transactions with professionalism and integrity.
              </p>
-             
            </div>
    
            {/* Footer Links */}
