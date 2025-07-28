@@ -12,13 +12,13 @@ const Footer = () => {
   return (
     
     <footer className="bg-slate-950 text-white px-6 py-10">
-         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 gap-y-8">
            {/* Logo and Mission */}
-           <div className="md:col-span-2">
+           <div className="md:col-span-2 text-center md:text-left mx-auto md:mx-0">
              <img
                src={Logo} 
                alt="Logo"
-               className="w-20 mb-4"
+               className="w-20 mb-4 mx-auto md:mx-0 rounded-full shadow-lg"
              />
              <h2 className="text-2xl font-bold mb-2">
                GAGA REAL ESTATE LIMITED 
@@ -59,14 +59,14 @@ const Footer = () => {
            </div>
    
            {/* Social Icons */}
-           <div>
+           <div className='flex flex-col items-center justify-center'>
              <h3 className="text-gray-300 font-semibold mb-4">Follow Social Media</h3>
-             <div className="flex gap-4 mb-4">
-                <Link><FaFacebookF className="text-xl" /></Link>
-                <Link><FaInstagram className="text-xl" /></Link>
-                <Link><FaXTwitter className="text-xl" /></Link>
-                <Link><FaYoutube className="text-xl" /></Link>
-             </div>
+             <div className="flex gap-4 mb-4 justify-center md:justify-start">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF className="text-xl" /></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram className="text-xl" /></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaXTwitter className="text-xl" /></a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><FaYoutube className="text-xl" /></a>
+              </div>
            </div>
          </div>
    
