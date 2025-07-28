@@ -11,6 +11,7 @@ const Contact = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -31,9 +32,11 @@ const Contact = () => {
         () => {
           setSubmitted(true);
           setFormData({ name: "", email: "", message: "" });
+          setError("");
         },
         (error) => {
-          console.error('FAILED...', error.text);
+          // console.error('FAILED...', error.text);
+          setError("Failed to send message. Please try again later.");
         }
       );
   };
@@ -50,6 +53,11 @@ const Contact = () => {
       </div>
 
       <div className='mt-4 md:mt-12 rounded-xl shadow-lg p-8'>
+        {error && (
+          <div className="mt-4 text-red-600 font-semibold text-center">
+            {error}
+          </div>
+        )}
         <h2 className="text-2xl font-semibold text-orange-700 mb-3">Send Us a Message</h2>
         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
           <input
