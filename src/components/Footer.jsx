@@ -31,10 +31,10 @@ const Footer = () => {
            {/* Footer Links */}
            <div>
              <ul className="space-y-2 text-sm">
-               <li><a className='cursor-pointer underline' href="/">Home</a></li>
-               <li><a className='cursor-pointer underline' href="/about">About</a></li>
-               <li><a className='cursor-pointer underline' href="/services">Services</a></li>
-               <li><a className='cursor-pointer underline' href="/contact">Contact</a></li>
+               <li><Link to="/" className='cursor-pointer underline'>Home</Link></li>
+               <li><Link to="/about" className='cursor-pointer underline' >About</Link></li>
+               <li><Link to="/services" className='cursor-pointer underline' >Services</Link></li>
+               <li><Link to="/contact" className='cursor-pointer underline' >Contact</Link></li>
              </ul>
            </div>
    
