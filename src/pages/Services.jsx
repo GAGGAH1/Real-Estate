@@ -4,6 +4,16 @@ import Image2 from '../assets/images/image2.jpeg';
 import Image3 from '../assets/images/image3.jpeg';
 import Image4 from '../assets/images/image4.jpeg';
 import Image5 from '../assets/images/image5.jpeg';
+import Image6 from '../assets/images/Image6.jpeg';
+import Image7 from '../assets/images/Image7.jpeg';
+import Image8 from '../assets/images/Image8.jpeg';
+import Image9 from '../assets/images/Image9.jpeg';
+import Image10 from '../assets/images/Image10.jpeg';
+import Image11 from '../assets/images/Image11.jpeg';
+import Image12 from '../assets/images/Image12.jpeg';
+import Image13 from '../assets/images/Image13.jpeg';
+import Image14 from '../assets/images/Image14.jpeg';
+
 
 
 const services = [
@@ -46,6 +56,51 @@ const services = [
     title: "Residential Properties",
     desc: "Verified uncompleted house, land for development and secure documentation.",
     img: Image5
+  },
+  {
+    title: "Residential Properties",
+    desc: "Verified completed house, land for development and secure documentation.",
+    img: Image6
+  },
+  {
+    title: "Residential Properties",
+    desc: "Verified completed house, land for development and secure documentation.",
+    img: Image7
+  },
+  {
+    title: "Residential Properties",
+    desc: "Verified completed house, land for development and secure documentation.",
+    img: Image8
+  },
+  {
+    title: "Residential Properties",
+    desc: "Verified completed house, land for development and secure documentation.",
+    img: Image9
+  },
+  {
+    title: "Residential Properties",
+    desc: "Verified completed house, land for development and secure documentation.",
+    img: Image10
+  },
+  {
+    title: "Residential Properties",
+    desc: "Verified completed house, land for development and secure documentation.",
+    img: Image11
+  },
+  {
+    title: "Residential Properties",
+    desc: "Verified completed house, land for development and secure documentation.",
+    img: Image12
+  },
+  {
+    title: "Residential Properties",
+    desc: "Verified completed house, land for development and secure documentation.",
+    img: Image13
+  },
+  {
+    title: "Residential Properties",
+    desc: "Verified completed house, land for development and secure documentation.",
+    img: Image14
   }
 ];
 
