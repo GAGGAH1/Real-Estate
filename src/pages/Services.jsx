@@ -13,6 +13,7 @@ import Image11 from '../assets/images/Image11.jpeg';
 import Image12 from '../assets/images/Image12.jpeg';
 import Image13 from '../assets/images/Image13.jpeg';
 import Image14 from '../assets/images/Image14.jpeg';
+import VideoUpload from '../components/VideoUpload';
 
 
 
@@ -101,7 +102,7 @@ const services = [
     title: "Residential Properties",
     desc: "Verified completed house, land for development and secure documentation.",
     img: Image14
-  }
+  },
 ];
 
 const Services = () => {
@@ -129,6 +130,7 @@ const Services = () => {
             <p className="text-gray-600 text-sm">{service.desc}</p>
           </div>
         ))}
+        <VideoUpload />
       </div>
     </section>
   );
