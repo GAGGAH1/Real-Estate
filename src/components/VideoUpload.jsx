@@ -37,6 +37,13 @@ const VideoUpload = () => {
 
   const handleUpload = async (e) => {
     e.preventDefault();
+    
+    // Validate credentials first
+    if (!CLOUD_NAME || !UPLOAD_PRESET) {
+      alert('❌ Missing Cloudinary credentials!\n\nPlease add these to your .env file:\nVITE_CLOUDINARY_CLOUD_NAME=your_cloud_name\nVITE_CLOUDINARY_UPLOAD_PRESET=your_preset');
+      return;
+    }
+
     if (!video) return;
 
     setLoading(true);
@@ -48,6 +55,8 @@ const VideoUpload = () => {
     formData.append('resource_type', 'video');
 
     try {
+      console.log('Uploading to Cloudinary:', { CLOUD_NAME, UPLOAD_PRESET, videoName: video.name, videoSize: video.size });
+
       const response = await fetch(
         `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/video/upload`,
         {
@@ -57,10 +66,14 @@ const VideoUpload = () => {
       );
 
       if (!response.ok) {
-        throw new Error(`Upload failed with status ${response.status}`);
+        const errorData = await response.json().catch(() => ({}));
+        const errorMessage = errorData.error?.message || `Upload failed with status ${response.status}`;
+        console.error('Cloudinary error:', errorData);
+        throw new Error(errorMessage);
       }
 
       const data = await response.json();
+      console.log('Upload successful:', data);
 
       const newVideo = {
         id: data.public_id,
@@ -81,8 +94,9 @@ const VideoUpload = () => {
       setUploadProgress(0);
       alert('✅ Video uploaded to Cloudinary successfully!');
     } catch (error) {
-      console.error('Upload failed:', error);
-      alert('❌ Upload failed. Please check your Cloudinary credentials.');
+      console.error('Upload error details:', error);
+      const errorMsg = error.message || 'Unknown error occurred';
+      alert(`❌ Upload failed:\n${errorMsg}\n\nCheck browser console for more details.`);
     } finally {
       setLoading(false);
     }
