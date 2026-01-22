@@ -47,7 +47,7 @@ const Contact = () => {
         <h2 className='text-2xl font-bold text-orange-700 mb-4'>Contact Information</h2>
         <p className="mb-2 text-gray-700">GAGA Real Estate Limited</p>
         <p className="mb-2 text-gray-700">Email: <a href="mailto:gaggahgideon@gmail.com" className="text-blue-600 underline">gaggahgideon@gmail.com</a></p>
-        <p className="mb-2 text-gray-700">Phone: <a href="tel:08052841581" className="text-blue-600 underline">08052841581</a></p>
+        <p className="mb-2 text-gray-700">Phone: <a href="tel:08052841581" className="text-blue-600 underline">08052841581,09045738854</a></p>
         <p className="mb-2 text-gray-700">Instagram: <a href="https://instagram.com/officiall_gflow" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">@officiall_gflow</a></p>
         <p className="mt-4 text-gray-500">We respond within 24 hours on business days.</p>
       </div>

@@ -42,21 +42,11 @@ const services = [
     desc: "Verified plots and land for development and secure documentation.",
     img: Image1
   },
-  // {
-  //   title: "Land Spaces",
-  //   desc: "Verified plots and land for development and secure documentation.",
-  //   img: Image2
-  // },
   {
     title: "Land Spaces",
     desc: "Verified plots and land for development and secure documentation.",
     img: Image3
   },
-  // {
-  //   title: "Land Spaces",
-  //   desc: "Verified plots and land for development and secure documentation.",
-  //   img: Image4
-  // },
   {
     title: "Residential Properties",
     desc: "Verified uncompleted house, land for development and secure documentation.",

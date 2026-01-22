@@ -27,7 +27,7 @@ const Navbar = () => {
             <li><a href='about' className='hover:text-gray-400'>About Us</a></li>
             <li><a href='services' className='hover:text-gray-400'>Services</a></li>
             <li><a href='contact' className='hover:text-gray-400'>Contact</a></li>
-            <li><a href='' className='font-bold text-xl text-orange-400'>08052841581</a></li>
+            <li><a href='' className='font-bold text-xl text-orange-400'>09045738854</a></li>
             </ul>
 
             {/* Mobile Menu */}
