@@ -13,7 +13,11 @@ import Image11 from '../assets/images/Image11.jpeg';
 import Image12 from '../assets/images/Image12.jpeg';
 import Image13 from '../assets/images/Image13.jpeg';
 import Image14 from '../assets/images/Image14.jpeg';
-import VideoUpload from '../components/VideoUpload';
+
+
+
+import Video1 from '../assets/videos/Mabushi Hotel.mp4';
+// import Video2 from '../assets/videos/video2.mp4';
 
 
 
@@ -103,6 +107,12 @@ const services = [
     desc: "Verified completed house, land for development and secure documentation.",
     img: Image14
   },
+  {
+    title: "Property Tour",
+    desc: "Virtual walkthrough of Hotel property",
+    img: Video1,
+    type: 'video'
+  }
 ];
 
 const Services = () => {
@@ -120,17 +130,27 @@ const Services = () => {
             className="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 p-6 hover:scale-[1.03]"
           >
             <div className="overflow-hidden rounded-xl mb-4">
-              <img
-                src={service.img}
-                alt={service.title}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+              {service.type === 'video' ? (
+                <video
+                  src={service.img}
+                  alt={service.title}
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  controls
+                  muted
+                />
+              ) : (
+                <img
+                  src={service.img}
+                  alt={service.title}
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              )}
             </div>
             <h2 className="text-2xl font-semibold text-orange-600 mb-2">{service.title}</h2>
             <p className="text-gray-600 text-sm">{service.desc}</p>
           </div>
         ))}
-        <VideoUpload />
+        
       </div>
     </section>
   );
